@@ -1,8 +1,8 @@
 import os
 import paramiko
 from datetime import datetime, timedelta
-from utils.utils import get_local_path
-from core.storage import Storage
+from utils import get_local_path
+from storage import Storage
 import io
 
 
