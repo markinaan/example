@@ -16,7 +16,7 @@ as
 select distinct
    *,
    CLOSED_STATUS as substatus,
-   783.00 - Copay as by_copay,
+   X - Copay as by_copay,
    coalesce(Serial__, 'Unknown') as Serial_coalesce,
    coalesce(Dispense_Date, '1000-01-01') as Dispense_Date_coalesce
 from `dwh.rx_procare_append`
