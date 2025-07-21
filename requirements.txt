@@ -1,0 +1,9 @@
+google-auth==2.10.0
+google-cloud==0.34.0
+google-cloud-firestore==2.7.2
+google-cloud-bigquery==3.3.2
+google-cloud-storage==2.5.0
+openpyxl==3.1.0
+pandas==2.2.2
+numpy==1.26.0
+wheel==0.40.0
