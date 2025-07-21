@@ -1,6 +1,6 @@
 import os
 from google.cloud import storage
-from utils.utils import get_local_path
+from utils import get_local_path
 
 
 class Storage:
