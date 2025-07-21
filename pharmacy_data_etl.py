@@ -1,9 +1,9 @@
 import os
 import re
 from datetime import datetime, timedelta
-from utils.utils import RequestMock, get_config, get_default_credentials, load_csv_to_dataframe, load_excel_to_dataframe, get_local_path
-from core.firestore import Firestore
-from core.sftp import SFTPHandler
+from utils import RequestMock, get_config, get_default_credentials, load_csv_to_dataframe, load_excel_to_dataframe, get_local_path
+from firestore import Firestore
+from sftp import SFTPHandler
 from google.cloud import storage
 
 credentials, project = get_default_credentials()
