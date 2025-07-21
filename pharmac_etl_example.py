@@ -3,9 +3,9 @@ import pandas as pd
 import re
 from os import path
 from datetime import datetime
-from core.bigquery import Bigquery
-from core.storage import Storage
-from utils.utils import RequestMock, get_config, get_default_credentials, load_csv_to_dataframe, load_excel_to_dataframe
+from bigquery import Bigquery
+from storage import Storage
+from utils import RequestMock, get_config, get_default_credentials, load_csv_to_dataframe, load_excel_to_dataframe
 
 credentials, project = get_default_credentials()
 
