@@ -74,17 +74,12 @@ def process_dataframe_rx_procare(df: pd.DataFrame) -> pd.DataFrame:
         refill_mask = (
                 group['Dispense Date'].notna() &
                 (group['NDC'] == 90017578200) &
-                # (group['CLOSED_STATUS'] == 'SHIPPED') &
                 (
                         serials.str.strip().eq('') |
                         serials.str.contains('DL2432570', na=False)
                 )
         )
-        # refill_mask = (
-        #         group['Dispense Date'].notna() &
-        #         (group['NDC'] == 90017578200) &
-        #         (group['Serial #'].isna() | (group['Serial #'].astype(str).str.strip() == ''))
-        # )
+
         refill_indexes = group[refill_mask].index
 
         original_mask = group['Serial #'].fillna('').astype(str).str.startswith('NI')
